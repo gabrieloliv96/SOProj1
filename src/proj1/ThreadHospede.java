@@ -5,7 +5,7 @@ public class ThreadHospede extends Thread {
 	// Implementação dos semaforos
 	
 	// Tempo assistindo um canal
-	public void assistirTv(long tempo, Hospede[] listaHospedes) {
+	public static void assistirTv(List<Hospede> listaHospedes) {
 		
 		// Assistir
 //		if () {
@@ -15,10 +15,10 @@ public class ThreadHospede extends Thread {
 	}
 	
 	// Em espera ou repouso
-	public void descansar() {}
+	public static void descansar() {}
 	
 	// Dormindo ou bloqueado - hospedes dormem quando o canal não for de agrado
-	public void dormir() {}
+	public static void dormir() {}
 	
 	
 }

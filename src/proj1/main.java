@@ -2,7 +2,9 @@ package proj1;
 
 import proj1.Hospede;
 
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Scanner;
 
 
@@ -14,6 +16,7 @@ public class main {
 		int canal;
 		long tempoTv;
 		long tempoDescanso;
+		List<Hospede> listaHospede = new ArrayList<Hospede>();
 		
 		// Teste
 		System.out.println("Insira a quantidade de hospedes");
@@ -39,17 +42,24 @@ public class main {
 				hospede.setTempoTv(tempoTv);
 				hospede.setTempoDescansar(tempoDescanso);
 				
-				
 				System.out.println(hospede.getId());
 				System.out.println(hospede.getCanal());
 				System.out.println(hospede.getTempoTv());
 				System.out.println(hospede.getTempoDescansar());
+				
+				listaHospede.add(hospede);
 //			}
 			
 		}
 		
+		ThreadHospede.assistirTv(listaHospede);
 		
+
     }
+	
+	public void run() {
+		
+	}
 	
 	
 	
