@@ -6,8 +6,8 @@ public class Hospede {
 
 	int id;
 	int canal;
-	long tTv;
-	long tDormir;
+	long tempoTv;
+	long tempoDescansar;
 	
 	// Get Set
 	public int getId() {
@@ -22,17 +22,17 @@ public class Hospede {
 	public void setCanal(int canal) {
 		this.canal = canal;
 	}
-	public long gettTv() {
-		return tTv;
+	public long getTempoTv() {
+		return tempoTv;
 	}
-	public void settTv(long tTv) {
-		this.tTv = tTv;
+	public void setTempoTv(long tTv) {
+		this.tempoTv = tTv;
 	}
-	public long gettDormir() {
-		return tDormir;
+	public long getTempoDescansar() {
+		return tempoDescansar;
 	}
-	public void settDormir(long tDormir) {
-		this.tDormir = tDormir;
+	public void setTempoDescansar(long tempoDescansar) {
+		this.tempoDescansar = tempoDescansar;
 	}
 	
 }
