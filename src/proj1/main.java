@@ -1,6 +1,8 @@
 package proj1;
 
 import proj1.Hospede;
+
+import java.util.Date;
 import java.util.Scanner;
 
 
@@ -10,6 +12,8 @@ public class main {
 		Scanner ler = new Scanner(System.in);
 		int id = 1;
 		int canal;
+		long tempoTv;
+		long tempoDescanso;
 		
 		// Teste
 		System.out.println("Insira a quantidade de hospedes");
@@ -26,9 +30,10 @@ public class main {
 				System.out.println("Canal do hospede " + id + ": ");
 				canal = ler.nextInt();
 				id ++;
-				System.out.println("Tempo assistindo Tv: ");
-				
-				System.out.println("Tempo descansando: ");
+				System.out.println("Tempo assistindo Tv (em segundos): ");
+				tempoTv = ler.nextLong();
+				System.out.println("Tempo descansando (em segundos): ");
+				tempoDescanso = ler.nextLong();
 				
 				hospede.setCanal(canal);
 				hospede.setTempoTv(tempoTv);
